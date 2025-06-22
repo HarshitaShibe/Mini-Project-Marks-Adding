@@ -9,10 +9,28 @@ marks_adding_system/
 └── README.md          # Project documentation
 
 ## Industrial Applications
-- Educational Institutes: Exam and internal assessment score processing.
-- Corporate Training: Skill test score aggregation across sessions.
-- EdTech Platforms: Backend for test evaluation and analytics.
-- Recruitment Agencies: Score tabulation across multi-stage evaluations.
+Start
+  │
+  ▼
+Read `marks.csv`
+  │
+  ▼
+Extract Header (Roll Num, Marks)
+  │
+  ▼
+For each row in CSV:
+  ├─► Check if Roll Num exists in dictionary
+  │      ├─ Yes: Add marks to existing total
+  │      └─ No: Create new entry with initial marks
+  │
+  ▼
+Print Total Marks per Student
+  │
+  ▼
+Write results to `total_marks.csv`
+  │
+  ▼
+End
 
 ## Future Enhancements
 - Add grading (A/B/C based on marks)
