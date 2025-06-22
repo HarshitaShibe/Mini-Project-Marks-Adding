@@ -3,10 +3,10 @@ Marks Adding System is a scalable Python tool that automates score aggregation f
 
 ## Project Structure
 marks_adding_system/
-├── marks.csv # Input file containing roll numbers and marks
-├── total_marks.csv # Output file with total marks per candidate
-├── marks_adder.py # Main Python script
-└── README.md # Project documentation
+├── marks.csv          # Input file containing roll numbers and marks
+├── total_marks.csv    # Output file with total marks per candidate
+├── marks_adder.py     # Main Python script for processing data
+└── README.md          # Project documentation
 
 ## Industrial Applications
 - Educational Institutes: Exam and internal assessment score processing.
