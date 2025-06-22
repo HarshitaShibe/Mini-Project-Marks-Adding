@@ -6,12 +6,14 @@ Marks Adding System is a scalable Python tool that automates score aggregation f
 flowchart TB
     A["Start"] --> B["Import necessary libraries e.g., pandas, csv, os"]
     B --> C["Load CSV dataset(Roll No. & Marks)"]
-    C --> D["Validate & clean data\ne.g., missing or invalid IDs"]
+    C --> D["Validate & clean data e.g., missing or invalid IDs"]
     D --> E["Calculate total marks per student (Roll No.)"]
     E --> F["Store results in new file e.g., result.csv"]
     F --> G["Display/export summary average, topper, etc."]
     G --> H["End"]
 ```
+## Aim
+<img src="https://github.com/psrana/Mini-Project-Marks-Adding/assets/7460892/9be14aa0-eaa0-403a-9575-32771724f0e2" width="60%" height="80%" />
 
 ## Industrial Applications
 - Educational Institutes: Exam and internal assessment score processing
