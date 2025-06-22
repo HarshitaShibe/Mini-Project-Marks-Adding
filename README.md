@@ -2,35 +2,22 @@
 Marks Adding System is a scalable Python tool that automates score aggregation from CSV files. It reads roll numbers or candidate IDs, calculates total marks and exports the results. Ideal for academic institutions, training programs, online test platforms and recruitment bodies handling bulk evaluations.
 
 ## Project Structure
-marks_adding_system/
-├── marks.csv          # Input file containing roll numbers and marks
-├── total_marks.csv    # Output file with total marks per candidate
-├── marks_adder.py     # Main Python script for processing data
-└── README.md          # Project documentation
+```mermaid
+flowchart TD
+    A[Start] --> B[Import necessary libraries<br/>(e.g., pandas, csv, os)]
+    B --> C[Load CSV dataset<br/>(Roll No. & Marks)]
+    C --> D[Validate & clean data<br/>(e.g., missing or invalid IDs)]
+    D --> E[Calculate total marks<br/>per student (Roll No.)]
+    E --> F[Store results in new file<br/>(e.g., result.csv)]
+    F --> G[Display/export summary<br/>(average, topper, etc.)]
+    G --> H[End]
+```
 
 ## Industrial Applications
-Start
-  │
-  ▼
-Read `marks.csv`
-  │
-  ▼
-Extract Header (Roll Num, Marks)
-  │
-  ▼
-For each row in CSV:
-  ├─► Check if Roll Num exists in dictionary
-  │      ├─ Yes: Add marks to existing total
-  │      └─ No: Create new entry with initial marks
-  │
-  ▼
-Print Total Marks per Student
-  │
-  ▼
-Write results to `total_marks.csv`
-  │
-  ▼
-End
+- Educational Institutes: Exam and internal assessment score processing
+- Corporate Training: Skill test score aggregation across sessions
+- EdTech Platforms: Backend for test evaluation and analytics
+- Recruitment Agencies: Score tabulation across multi-stage evaluations
 
 ## Future Enhancements
 - Add grading (A/B/C based on marks)
