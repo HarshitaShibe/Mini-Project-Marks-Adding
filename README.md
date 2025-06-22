@@ -3,7 +3,7 @@ Marks Adding System is a scalable Python tool that automates score aggregation f
 
 ## Project Structure
 ```mermaid
-flowchart TD
+flowchart TB
     A[Start] --> B[Import necessary libraries<br/>(e.g., pandas, csv, os)]
     B --> C[Load CSV dataset<br/>(Roll No. & Marks)]
     C --> D[Validate & clean data<br/>(e.g., missing or invalid IDs)]
